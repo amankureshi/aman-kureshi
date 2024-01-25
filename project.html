@@ -13,8 +13,11 @@
         * {
             margin: 0;
             padding: 0;
-            background-color: #F3F3F3;
             font-family: 'Nunito', sans-serif
+        }
+
+        body {
+            background-color: #f0f1f8;
         }
 
         header {
@@ -72,10 +75,11 @@
 
         /* <------------------- Card-Section ------------------->*/
 
-        .card {
+        .card-wrapper {
             display: flex;
             flex-flow: column wrap;
             gap: 2rem;
+            padding: 1rem 0 3rem;
             justify-content: center;
             -webkit-box-pack: center;
             text-align: center;
@@ -83,16 +87,17 @@
             /* padding: 30px 10%; */
         }
 
-        .first_card {
+        .card {
             padding: 2rem 1rem;
+            background-color: #fff;
             border-radius: 10px;
-            box-shadow: rgb(201, 197, 197) 0px 0px 4px 2px;
+            box-shadow: #eee 0px 0px 4px 2px;
             border-radius: 20px;
             width: 320px;
         }
 
 
-        .first_card img {
+        .card img {
             width: 310px;
             display: block;
             height: 200px;
@@ -100,7 +105,7 @@
             margin: 1rem 0px 2rem;
         }
 
-        .first_card a {
+        .card a {
             border: 2px solid #0088a9;
             padding: 5px 5px;
             color: rgba(252, 136, 43, 0.8);
@@ -111,7 +116,7 @@
             font-weight: 600;
         }
 
-        .first_card a:hover {
+        .card a:hover {
             color: white;
             background-color: #0088a9;
 
@@ -119,7 +124,7 @@
 
 
         @media (min-width: 768px) {
-            .card {
+            .card-wrapper {
                 flex-direction: row;
             }
         }
@@ -138,47 +143,41 @@
         </nav>
     </header>
 
-    <div class="main-btn">
-        <button>React</button>
-        <button>Javascript</button>
-        <button>Css</button>
-    </div>
-
-    <div class="card">
-        <div class="first_card">
+    <div class="card-wrapper">
+        <div class="card">
             <h2>Qoute</h2>
             <img src="/images/quote.png" alt="">
             <a href="">Source code</a>
             <a href="">Visit page</a>
         </div>
-        <div class="first_card">
+        <div class="card">
             <h2>Qoute</h2>
             <img src="https://images.pexels.com/photos/1485548/pexels-photo-1485548.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="">
             <a href="">Source code</a>
             <a href="">Visit page</a>
         </div>
-        <div class="first_card">
+        <div class="card">
             <h2>Qoute</h2>
             <img src="https://images.pexels.com/photos/1721094/pexels-photo-1721094.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="">
             <a href="">Source code</a>
             <a href="">Visit page</a>
         </div>
-        <div class="first_card">
+        <div class="card">
             <h2>Qoute</h2>
             <img src="https://i.pinimg.com/originals/c3/9b/03/c39b031ae89204d8f0f398a6e8855184.jpg" alt="">
             <a href="">Source code</a>
             <a href="">Visit page</a>
         </div>
-        <div class="first_card">
+        <div class="card">
             <h2>Qoute</h2>
             <img src="https://images.pexels.com/photos/1485548/pexels-photo-1485548.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="">
             <a href="">Source code</a>
             <a href="">Visit page</a>
         </div>
-        <div class="first_card">
+        <div class="card">
             <h2>Qoute</h2>
             <img src="https://images.pexels.com/photos/1721094/pexels-photo-1721094.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="">
